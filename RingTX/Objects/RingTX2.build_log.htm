@@ -21,7 +21,7 @@ Target DLL:      UL2CM3.DLL V1.164.0.0
 Dialog DLL:      TARMP1.DLL V1.26.0.0
  
 <h2>Project:</h2>
-\\ecfile1.uwaterloo.ca\csforza\My Documents\RingTX\RingTX2.uvprojx
+\\ecfile1.uwaterloo.ca\eohayon\My Documents\RingTX\RingTX2.uvprojx
 Project File Date:  10/26/2022
 
 <h2>Output:</h2>
@@ -32,26 +32,16 @@ compiling GLCD_Scroll.c...
 compiling GLCD_SPI_LPC1700.c...
 compiling uart.c...
 compiling p2_main.c...
-src\p2_main.c(18): warning:  #61-D: integer operation result is out of range
-  		LPC_GPIO1->FIOSET |= 1<<31;
-src\p2_main.c(18): warning:  #68-D: integer conversion resulted in a change of sign
-  		LPC_GPIO1->FIOSET |= 1<<31;
-src\p2_main.c(20): warning:  #61-D: integer operation result is out of range
-  		LPC_GPIO1->FIOCLR |= 1<<31;
-src\p2_main.c(20): warning:  #68-D: integer conversion resulted in a change of sign
-  		LPC_GPIO1->FIOCLR |= 1<<31;
-src\p2_main.c(80): warning:  #61-D: integer operation result is out of range
-  	LPC_GPIO1->FIODIR |= 1<<31;
-src\p2_main.c(80): warning:  #68-D: integer conversion resulted in a change of sign
-  	LPC_GPIO1->FIODIR |= 1<<31;
-src\p2_main.c: 6 warnings, 0 errors
+src\p2_main.c(145): warning:  #111-D: statement is unreachable
+  		osThreadYield();
+src\p2_main.c: 1 warning, 0 errors
 compiling rtx_lib.c...
 compiling RTX_Config.c...
 assembling startup_LPC17xx.s...
 compiling system_LPC17xx.c...
 linking...
-Program Size: Code=4904 RO-data=524 RW-data=9764 ZI-data=8324  
-".\Objects\RingTX2.axf" - 0 Error(s), 6 Warning(s).
+Program Size: Code=10116 RO-data=6864 RW-data=9868 ZI-data=8324  
+".\Objects\RingTX2.axf" - 0 Error(s), 1 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -86,26 +76,26 @@ Package Vendor: Keil
    * Component: ARM::CMSIS:CORE:5.5.0
 
    * Component: ARM::CMSIS:RTOS2:Keil RTX5:Library:5.5.3
-      Source file:   CMSIS\RTOS2\RTX\Template\Thread.c
-      Include file:  CMSIS\RTOS2\RTX\Config\RTX_Config.h
-      Source file:   CMSIS\RTOS2\RTX\Template\MsgQueue.c
-      Source file:   CMSIS\RTOS2\RTX\Template\Semaphore.c
-      Source file:   CMSIS\RTOS2\RTX\Config\RTX_Config.c
-      Source file:   CMSIS\RTOS2\RTX\Template\main.c
       Source file:   CMSIS\RTOS2\RTX\Template\MemPool.c
-      Source file:   CMSIS\RTOS2\RTX\Template\Mutex.c
+      Source file:   CMSIS\RTOS2\RTX\Source\rtx_lib.c
+      Source file:   CMSIS\RTOS2\RTX\Template\MsgQueue.c
+      Source file:   CMSIS\RTOS2\RTX\Config\RTX_Config.c
+      Include file:  CMSIS\RTOS2\RTX\Include\rtx_os.h
+      Include file:  CMSIS\RTOS2\RTX\Config\RTX_Config.h
+      Source file:   CMSIS\RTOS2\RTX\Template\main.c
+      Source file:   CMSIS\RTOS2\RTX\Template\Thread.c
       Source file:   CMSIS\RTOS2\RTX\Template\Timer.c
       Source file:   CMSIS\RTOS2\RTX\Template\svc_user.c
       Source file:   CMSIS\RTOS2\RTX\Template\Events.c
-      Source file:   CMSIS\RTOS2\RTX\Source\rtx_lib.c
-      Include file:  CMSIS\RTOS2\RTX\Include\rtx_os.h
+      Source file:   CMSIS\RTOS2\RTX\Template\Mutex.c
       Library file:  CMSIS\RTOS2\RTX\Library\ARM\RTX_CM3.lib
+      Source file:   CMSIS\RTOS2\RTX\Template\Semaphore.c
 
    * Component: Keil::Device:Startup:1.0.0
-      Source file:   Device\Source\system_LPC17xx.c
-      Include file:  Device\Include\LPC17xx.h
       Source file:   Device\Source\ARM\startup_LPC17xx.s
+      Include file:  Device\Include\LPC17xx.h
       Include file:  RTE_Driver\Config\RTE_Device.h
+      Source file:   Device\Source\system_LPC17xx.c
 Build Time Elapsed:  00:00:01
 </pre>
 </body>

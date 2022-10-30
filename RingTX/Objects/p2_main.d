@@ -8,3 +8,7 @@
 .\objects\p2_main.o: C:\Software\Keil_v5\ARM\PACK\ARM\CMSIS\5.8.0\CMSIS\Core\Include\mpu_armv7.h
 .\objects\p2_main.o: C:\Software\Keil_v5\ARM\PACK\Keil\LPC1700_DFP\2.7.0\Device\Include\system_LPC17xx.h
 .\objects\p2_main.o: C:\Software\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\p2_main.o: src\GLCD.h
+.\objects\p2_main.o: C:\Software\Keil_v5\ARM\PACK\ARM\CMSIS\5.8.0\CMSIS\RTOS2\Include\cmsis_os2.h
+.\objects\p2_main.o: C:\Software\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+.\objects\p2_main.o: C:\Software\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
